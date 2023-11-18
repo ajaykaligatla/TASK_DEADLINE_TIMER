@@ -1,0 +1,57 @@
+/* src/styles/TaskCard.css */
+.task-card {
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 20px);
+    box-sizing: border-box;
+    margin: 0 10px 20px;
+    display: inline-block;
+  }
+  
+  .task-card.deadline-crossed {
+    background-color: #ffcccc; /* Red background for crossed deadline */
+  }
+  
+  .task-card h2 {
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  .task-card p {
+    margin-bottom: 10px;
+    color: #555555;
+  }
+  
+  .task-card .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .task-card button {
+    padding: 10px;
+    width: 48%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* src/styles/TaskCard.css */
+.task-card.completed {
+    background-color: lightgreen; /* Change this to the desired color for completed tasks */
+  }
+
+  
+  .task-card button:hover {
+    background-color: #3498db;
+    color: #ffffff;
+  }
+  
+  .task-card .complete-button {
+    background-color: #2ecc71; /* Green background for completed task */
+  }
+  
